@@ -21,7 +21,9 @@ class Anagram
   #create an instance method that will look at each instance of Anagram (word) that has been initialized
   def match(word)
     #take in the instance of the word (and its possible matches) and compare. split into
-    word.split("").match
+    word.split(" ")
+    word.scan /\w/
+    word.match
   end
 
 
