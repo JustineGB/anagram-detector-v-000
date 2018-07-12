@@ -6,7 +6,8 @@ class Anagram
   end
 
   def match(word)
-    matched_word = [].sort
+    matched_word = []
+    matched_word.to_s.split("").sort
     @word.split("").sort.collect {|word| @word == matched_word}
   end
 end
