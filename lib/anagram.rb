@@ -22,8 +22,8 @@ class Anagram
     #take in the instance of the word (and its possible matches) and compare. split into
     #word.split(" ")
   #  word.scan /\w/
-    word = []
-    word = @word.chars
+  @word.to_s.split("")
+    #word.chars
     #word.match
   end
 end
