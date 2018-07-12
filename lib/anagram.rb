@@ -22,7 +22,8 @@ class Anagram
   def match(word)
     #take in the instance of the word (and its possible matches) and compare. split into
     #word.split(" ")
-    word.scan /\w/
+  #  word.scan /\w/
+    word.chars
     #word.match
   end
 
