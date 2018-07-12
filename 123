@@ -5,7 +5,7 @@ class Anagram
     @word = word
   end
 
-  def match(word, matched_word)
+  def match(word)
   words.group_by {|word| word.chars.sort }
   end
 end
