@@ -6,7 +6,7 @@ class Anagram
   end
 
   def match(word, matched_word)
-    matched_word.select do |word| word.char.sort == matched_word.char.sort
+  words.group_by {|word| word.chars.sort }
   end
 end
 
