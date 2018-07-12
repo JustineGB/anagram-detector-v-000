@@ -7,8 +7,8 @@ class Anagram
 
   def match(word)
     matched_word = []
-    matched_word.to_s.split("").sort.to_a
-    @word.split("").sort.match {|word| @word == matched_word}
+    matched_word.to_s.split("").sort
+    @word.split("").sort.each {|word| @word == matched_word}
   end
 end
 
