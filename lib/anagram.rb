@@ -22,7 +22,6 @@ class Anagram
     #take in the instance of the word (and its possible matches) and compare. split into
     matched_word = []
     word = @word.split("")
-    binding.pry
     if word == matched_word.sort
       matched_word
     end
