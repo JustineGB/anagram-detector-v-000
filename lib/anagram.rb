@@ -19,14 +19,14 @@ class Anagram
 
   #create an instance method that will look at each instance of Anagram (word) that has been initialized
   #take in the instance of the word (and its possible matches) and compare. split into
-  def match(word)
-    matched_word = []
-    word each do |match|
+  def match(potential_matches)
+    matches = []
+    potential_matches each do |match|
       if match.split("").sort == @word.split("").sort
-      matched_word  << match
+      matches  << match
     end
   end
-  matched_word
+  matches
 end
 end
 
