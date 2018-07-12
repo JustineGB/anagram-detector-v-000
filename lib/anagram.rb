@@ -26,20 +26,4 @@ class Anagram
     word = @word.chars
     #word.match
   end
-
-
-end
-
-
-
-class Anagram
-  attr_accessor :word
-
-  def initialize(word)
-    @@word = word
-  end
-
-  def match(word)
-    word.split("").match
-  end
 end
