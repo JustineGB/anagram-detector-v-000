@@ -21,7 +21,7 @@ class Anagram
   #take in the instance of the word (and its possible matches) and compare. split into
   def match(potential_matches)
     matches = []
-    potential_matches each do |match|
+    potential_matches.each do |match|
       if match.split("").sort == @word.split("").sort
       matches << match
     end
