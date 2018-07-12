@@ -21,18 +21,15 @@ class Anagram
   #take in the instance of the word (and its possible matches) and compare. split into
 
   def match(word, potential_match)
-    potential_match =[]
-    @word.split("")
-    potential_match.each do |letters| potential_match.sort
-    if word == matched_word.sort
-      matched_word
+    word.split("")
+    potential_match.each {|letters| word.char.sort == potential_match.char.sort}
     end
+  end
 
     #this returns the word split up into its letters in an array!
     #Now I need to take these broken up letters and compare them to the array (after I break up those letters)
     #given an array - sep into letters and sort then compare!
-  end
-end
+
 
 
 
