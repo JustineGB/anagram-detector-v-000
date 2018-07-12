@@ -18,12 +18,24 @@ class Anagram
   end
 
   #create an instance method that will look at each instance of Anagram (word) that has been initialized
-  def match
+  def match(matched_word)
     #take in the instance of the word (and its possible matches) and compare. split into
-    #word.split(" ")
-  #  word.scan /\w/
-  @word.to_s.split("")
-    #word.chars
-    #word.match
+    matched_word = []
+    word = @word.split("")
+    if word == matched_word.sort
+      matched_word
+    end
+
+    #this returns the word split up into its letters in an array!
+    #Now I need to take these broken up letters and compare them to the array (after I break up those letters)
+    #given an array - sep into letters and sort then compare!
   end
 end
+
+
+
+#other possible methods:
+  #word.chars
+  #word.match
+  #word.split(" ")
+  #word.scan /\w/
