@@ -22,7 +22,7 @@ class Anagram
   def match(word)
     matched_word = []
     word each do |match|
-      if match.split("").sort == word.split("").sort
+      if match.split("").sort == @word.split("").sort
       matched_word  << match
     end
   end
