@@ -22,9 +22,11 @@ class Anagram
   def match(matched_word)
     matched_word = []
     matched_word each do |match|
-      if word.char.sort == potential_match.char.sort
+      if matched_word.split("").sort == word.split("").sort
+      matched_word  << word
     end
   end
+  matched_word 
 end
 end
 
