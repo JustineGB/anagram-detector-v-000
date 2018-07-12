@@ -6,8 +6,9 @@ class Anagram
   end
 
   def match(word)
-  word.each {|word| word.chars.sort }
-
+  array = []
+  word.group_by {|word| word.chars.sort == array.char.sort}
+  
   end
 end
 
