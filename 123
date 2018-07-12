@@ -5,11 +5,17 @@ class Anagram
     @word = word
   end
 
-  def match(word)
-  match = []
-  @word.to_s.split("").sort.match  {|letters| @word == matches }
+  def match(matched_word)
+    matched_word = []
+    word = @word.split("")
+    if word == matched_word.sort
+      matched_word
+    end
   end
 end
 
+
 listen = Anagram.new("listen")
 listen.match(%w(enlists google inlets banana))
+
+sort.match  {|letters| @word == matches }
