@@ -23,7 +23,7 @@ class Anagram
     matches = []
     potential_matches each do |match|
       if match.split("").sort == @word.split("").sort
-      matches  << match
+      matches << match
     end
   end
   matches
