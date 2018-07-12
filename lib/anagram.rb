@@ -23,7 +23,7 @@ class Anagram
     #take in the instance of the word (and its possible matches) and compare. split into
     #word.split(" ")
     word.scan /\w/
-    word.match
+    #word.match
   end
 
 
