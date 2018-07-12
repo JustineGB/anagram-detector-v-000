@@ -19,8 +19,10 @@ class Anagram
 
   #create an instance method that will look at each instance of Anagram (word) that has been initialized
   #take in the instance of the word (and its possible matches) and compare. split into
-
-  def match(word, potential_match)
+  def match(matched_word)
+    matched_word = []
+    matched_word each do |match| 
+      if 
     word.split("")
     potential_match.each {|letters| word.char.sort == potential_match.char.sort}
     end
@@ -28,10 +30,7 @@ class Anagram
 
     #this returns the word split up into its letters in an array!
     #Now I need to take these broken up letters and compare them to the array (after I break up those letters)
-    #given an array - sep into letters and sort then compare!
-
-
-
+    #given an array - sep into letters and sort then compare
 
 #other possible methods:
   #word.chars
