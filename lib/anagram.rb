@@ -26,6 +26,7 @@ class Anagram
     end
   end
 end
+end
 
     #this returns the word split up into its letters in an array!
     #Now I need to take these broken up letters and compare them to the array (after I break up those letters)
