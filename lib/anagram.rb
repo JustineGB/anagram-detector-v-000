@@ -14,14 +14,14 @@ class Anagram
 
   #initalize each instance
   def initialize(word)
-    @@word = word
+    @word = word
   end
 
   #create an instance method that will look at each instance of Anagram (word) that has been initialized
   def match(matched_word)
     #take in the instance of the word (and its possible matches) and compare. split into
     matched_word = []
-    word = @@word.split("")
+    word = @word.split("")
     binding.pry
     if word == matched_word.sort
       matched_word
