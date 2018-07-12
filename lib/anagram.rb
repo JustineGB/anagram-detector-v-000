@@ -14,17 +14,16 @@ class Anagram
 
   #initalize each instance
   def initialize(word)
-  #create a class var that is accessible w/in class & instance
-    @@word = word
+    @word = word
   end
 
   #create an instance method that will look at each instance of Anagram (word) that has been initialized
-  def match(word)
+  def match
     #take in the instance of the word (and its possible matches) and compare. split into
     #word.split(" ")
   #  word.scan /\w/
-  word = []
-    word.chars
+    word = []
+    word = @word.chars
     #word.match
   end
 
